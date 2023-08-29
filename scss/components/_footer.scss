@@ -1,0 +1,237 @@
+.footer {
+    width: 100%;
+    background-color: $white;
+    border-top: 1px solid $border;
+
+    &__body {
+        padding: 44px 0 60px;
+
+        @include media-min("xl") {
+
+            padding: 60px 0 80px;
+        }
+
+        @include media-max("sm") {
+            padding: 24px 0 40px;
+        }
+    }
+
+    &__logo {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__mapAndAddress {
+        display: flex;
+        flex-direction: row;
+        padding-top: 14px;
+
+        @include media-max("md") {
+            padding-top: 14px;
+            flex-direction: column;
+        }
+
+        @include media-min("xl") {
+            padding-top: 20px;
+        }
+
+        &_map {
+            display: flex;
+            width: 50%;
+
+            @include media-max("md") {
+                min-width: 264px;
+                width: 100%;
+            }
+
+            @include media-min("xl") {
+                width: 49%;
+            }
+
+            iframe {
+                @include media-max("md") {
+                    min-width: 264px;
+
+                }
+
+                flex: 1 1 auto;
+
+
+            }
+
+        }
+
+    }
+
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        margin-left: 40px;
+
+
+        @include media-max("md") {
+            margin-left: 0;
+            margin-top: 40px;
+        }
+
+        @include media-min("xl") {
+            margin-left: 120px;
+        }
+
+        h1 {
+            margin: 0;
+            padding-bottom: 20px;
+
+            @include media-min("xl") {
+                padding-bottom: 24px;
+            }
+
+            font-family: 'Mulish';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            text-transform: uppercase;
+            color: $blue;
+
+            @include media-min("xl") {
+                font-size: 20px;
+                line-height: 25px;
+
+            }
+        }
+
+
+
+
+    }
+
+    &_phone {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 12px;
+
+
+        picture {
+            display: flex;
+        }
+
+        img {
+            width: 16px;
+            height: 16px;
+            padding-right: 12px;
+
+            @include media-min("xl") {
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        h4 {
+            display: flex;
+            align-items: center;
+            font-family: 'Mulish';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 150%;
+            color: $black;
+            margin: 0;
+
+            @include media-min("xl") {
+                font-size: 16px;
+
+            }
+
+        }
+
+        a {
+            text-decoration: none;
+
+        }
+
+    }
+
+    &__social {
+        margin-top: 40px;
+
+        @include media-min("xl") {
+            margin-top: 50px;
+        }
+
+        h1 {
+            margin: 0;
+            font-family: 'Mulish';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            text-transform: uppercase;
+            color: $blue;
+
+            @include media-min("xl") {
+                font-size: 20px;
+                line-height: 25px;
+
+            }
+        }
+
+        &_photo {
+            display: flex;
+            flex-direction: row;
+
+            gap: 12px;
+
+
+            a {
+                text-decoration: none;
+
+                picture {
+                    display: flex;
+                    width: 25px;
+
+                    @include media-min("xl") {
+                        width: 30px;
+
+                    }
+                }
+
+                img {
+                    width: 25px;
+                    height: 25px;
+                    padding-right: 12px;
+
+                    @include media-min("xl") {
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+            }
+        }
+
+    }
+
+    &__rights {
+        display: flex;
+        margin-top: 30px;
+
+        @include media-max("sm") {
+            margin-top: 40px;
+        }
+
+        @include media-min("xl") {
+            margin-top: 20px;
+        }
+
+        p {
+            font-family: 'Mulish';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;
+            color: $border;
+        }
+    }
+}

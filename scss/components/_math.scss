@@ -1,0 +1,462 @@
+.math {
+    width: 100%;
+    display: flex;
+    background: $bggrey;
+    padding: 60px 0 40px;
+
+    @include media-min("md") {
+        padding: 80px 0 60px;
+    }
+
+    @include media-min("xl") {
+        padding: 100px 0 80px;
+    }
+
+    &__body {
+
+        padding: 40px 0;
+
+        @include media-min("md") {
+            width: 50%;
+            padding: 95px 0;
+        }
+
+        @include media-min("xl") {
+
+            padding: 132px 0;
+        }
+
+        @include media-min("hd") {
+            padding: 122px 0;
+        }
+
+    }
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+            margin: 0;
+            font-family: 'Mulish';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 110%;
+            color: $black;
+
+            @include media-min("md") {
+                font-size: 32px;
+            }
+
+            @include media-min("xl") {
+                font-size: 48px;
+            }
+
+            @include media-min("hd") {
+                font-size: 64px;
+            }
+        }
+
+        p {
+            margin: 0;
+            padding-top: 20px;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 150%;
+            color: $black;
+
+            @include media-min("xl") {
+                padding-top: 30px;
+                font-size: 18px;
+            }
+        }
+
+    }
+
+    &__button {
+
+        @include media-max("md") {
+            display: flex;
+            position: relative;
+            justify-content: end;
+            padding-right: 18px;
+            margin-left: 18px;
+            padding-top: 10px;
+        }
+
+        button {
+            a {
+                text-align: center;
+                vertical-align: top;
+                padding: 12px 30px;
+
+                color: $white;
+                text-decoration: none;
+                font-family: 'Mulish';
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 18px;
+
+                @include media-min("xl") {
+                    padding: 16px 35px;
+                }
+            }
+
+            border: none;
+            display:flex;
+            background: $blue;
+            position: relative;
+            margin-top:40px;
+            margin-left:18px;
+            justify-content: center;
+
+            @include media-max("md") {
+                margin-left: 0;
+                width: 100%;
+            }
+
+
+            @include media-min("xl") {
+                margin-top: 50px;
+            }
+
+
+            &:before {
+                content: '';
+                display: block;
+                clear: both;
+                width: 0;
+                height: 0;
+                border-left: 18px solid transparent;
+                border-bottom: 44px solid $blue;
+                position: absolute;
+                top: 0;
+                left: -18px;
+
+                @include media-min("xl") {
+                    border-bottom: 52px solid $blue;
+                }
+            }
+
+            &:after {
+                content: '';
+                display: block;
+                clear: both;
+                width: 0;
+                height: 0;
+                border-right: 18px solid transparent;
+                border-top: 44px solid $blue;
+                position: absolute;
+                top: 0;
+                right: -18px;
+
+                @include media-min("xl") {
+                    border-top: 52px solid $blue;
+                }
+            }
+
+            &:hover {
+                background: #2152B2;
+            }
+
+            &:hover:before {
+
+                border-bottom: 44px solid #2152B2;
+
+                @include media-min("xl") {
+                    border-bottom: 52px solid #2152B2;
+                }
+
+            }
+
+            &:hover:after {
+                border-top: 44px solid #2152B2;
+
+                @include media-min("xl") {
+                    border-top: 52px solid #2152B2;
+                }
+            }
+        }
+    }
+
+    &__row {
+        display: flex;
+        flex-direction: column;
+
+
+        @include media-min("md") {
+            flex-direction: row;
+            gap: 100px;
+        }
+
+        @include media-min("xl") {
+            gap: 134px;
+        }
+    }
+
+    &__columnCourses {
+        max-width: 466px;
+        width: 100%;
+        margin-bottom: 40px;
+
+        @include media-min("md") {
+            margin-bottom: 0;
+
+        }
+
+
+        h1 {
+            margin: 0 0 20px;
+            font-family: 'Mulish';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            color: $blue;
+
+            @include media-min("xl") {
+                margin: 0 0 30px;
+                font-size: 20px;
+                line-height: 25px;
+            }
+        }
+
+        ul {
+            margin: 0;
+            padding: 0 0 0 15px;
+        }
+
+        li {
+            padding-left: 5px;
+            margin-bottom: 12px;
+            list-style-image: url("C:\\Users\\Admin\\Desktop\\it-academy\\img\\list.svg");
+        }
+     
+
+        h3 {
+            margin: 0;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 140%;
+            color: $black;
+        }
+
+        .weight {
+            font-weight: 300;
+        }
+
+
+    }
+
+    &__columnText {
+        width: 100%;
+
+        h1 {
+            margin: 0;
+            padding-bottom: 20px;
+            font-family: 'Mulish';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 25px;
+            color: $blue;
+
+            @include media-min("md") {
+                font-size: 24px;
+                line-height: 30px;
+            }
+
+            @include media-min("xl") {
+                font-size: 32px;
+                line-height: 40px;
+                padding-bottom: 30px;
+            }
+        }
+
+        p {
+            margin: 0;
+            padding-bottom: 20px;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 150%;
+            color: $black;
+
+            @include media-min("xl") {
+                font-size: 18px;
+            }
+        }
+
+        h4 {
+            margin: 0;
+            padding-bottom: 20px;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 150%;
+            color: $black;
+
+            @include media-min("xl") {
+                font-size: 18px;
+            }
+
+        }
+    }
+
+    &__bodyRobots {
+
+        padding: 40px 0;
+
+        @include media-min("md") {
+            width: 50%;
+            padding: 78px 0;
+        }
+
+        @include media-min("xl") {
+
+            padding: 132px 0;
+        }
+
+        @include media-min("hd") {
+            padding: 87px 0;
+        }
+
+    }
+
+    &__bodyProga {
+
+        padding: 40px 0;
+
+        @include media-min("md") {
+            width: 50%;
+            padding: 78px 0;
+        }
+
+        @include media-min("xl") {
+
+            padding: 92px 0;
+        }
+
+        @include media-min("hd") {
+            padding: 87px 0;
+        }
+
+    }
+
+    &__bodyMarker {
+        display: flex;
+        flex-direction: column;
+
+
+        @include media-min("xl") {
+            flex-direction: row;
+
+        }
+
+
+        &__marker {
+
+
+            li {
+                padding-bottom: 20px;
+
+                @include media-min("hd") {
+                    padding-bottom: 30px;
+                }
+
+
+                flex-direction: column;
+
+
+                @include media-min("xl") {
+                    flex-direction: row;
+
+                }
+
+                display: flex;
+                position: relative;
+                font-family: 'Mulish';
+                font-style: normal;
+                font-weight: 900;
+                font-size: 36px;
+                line-height: 45px;
+
+                color: rgba(53, 106, 210, 0.2);
+
+                @include media-min("xl") {
+                    font-size: 48px;
+                    line-height: 60px;
+                }
+            }
+
+            ol {
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+                /* Убираем исходные маркеры */
+                counter-reset: item;
+            }
+
+            li:before {
+                content: "0" counter(item) '';
+                counter-increment: item;
+                margin-bottom: 20px;
+
+                @include media-min("xl") {
+                    margin-bottom: 0;
+                    margin-right: 40px;
+                }
+            }
+
+
+
+        }
+
+
+        &__column {
+            display: flex;
+            flex-direction: column;
+
+
+            strong {
+                margin: 0;
+                padding-bottom: 12px;
+                font-family: 'Mulish';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                color: $black;
+
+                @include media-min("xl") {
+                    font-size: 20px;
+                    line-height: 25px;
+                }
+            }
+
+            h5 {
+                margin: 0;
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 150%;
+                color: $black;
+
+                @include media-min("xl") {
+                    font-size: 16px;
+                }
+            }
+        }
+
+
+
+    }
+}

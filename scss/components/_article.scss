@@ -1,0 +1,206 @@
+.article {
+    display: flex;
+    width: 100%;
+    background-color: $white;
+    padding: 60px 0;
+
+    @include media-min("md") {
+        padding: 80px 0;
+    }
+
+    @include media-min("xl") {
+        padding: 100px 0;
+    }
+
+    &__head {
+        display: flex;
+        position: relative;
+        margin-bottom: 40px;
+        flex-direction: column;
+        gap: 30px;
+
+        @include media-max("md") {
+            margin-bottom: 30px;
+        }
+
+        @include media-max("xl") {
+            margin-bottom: 20px;
+        }
+
+        &_back {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+
+
+            a {
+                text-decoration: none;
+
+                picture {
+                    img {
+                        width: 24px;
+                        height: 14px;
+                        margin-right: 12px;
+
+                        @include media-max("md") {
+                            width: 20px;
+                            height: 12px;
+                        }
+                    }
+                }
+
+                h5 {
+                    margin: 0;
+                    font-family: 'Mulish';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 18px;
+                    color: $black;
+
+                    @include media-min("md") {
+                        font-size: 16px;
+                    }
+
+                }
+            }
+
+
+        }
+
+        h1 {
+            margin: 0;
+            font-family: 'Mulish';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 110%;
+            color: $black;
+
+            @include media-min("md") {
+                font-size: 32px;
+            }
+
+            @include media-min("xl") {
+                font-size: 48px;
+            }
+
+            @include media-min("hd") {
+                font-size: 64px;
+            }
+        }
+
+
+    }
+
+    &_date {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 30px;
+
+        @include media-min("xl") {
+            margin-bottom: 40px;
+        }
+
+        h4 {
+            margin: 0;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 150%;
+            color: $black;
+
+            @include media-min("md") {
+                font-size: 16px;
+            }
+
+        }
+
+        &_hashtag {
+            margin-left: auto;
+
+            p {
+                margin: 0;
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 150%;
+                color: $blue;
+                text-align: right;
+                text-transform: uppercase;
+
+                @include media-min("md") {
+                    font-size: 16px;
+                }
+            }
+        }
+
+
+    }
+
+    &__picture {
+
+        margin-bottom: 30px;
+
+        @include media-min("md") {
+            margin-bottom: 40px;
+        }
+
+        @include media-min("xl") {
+            margin-bottom: 60px;
+        }
+
+        picture {
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+
+        @include media-min("xl") {
+            margin: 0 auto;
+            max-width: 780px;
+        }
+
+
+        strong {
+            margin: 0;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 150%;
+            color: $black;
+
+            @include media-min("xl") {
+                font-size: 24px;
+            }
+        }
+
+        p {
+            margin: 20px 0 12px;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 150%;
+            color: $black;
+
+            @include media-min("xl") {
+                font-size: 18px;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: $blue;
+        }
+    }
+}

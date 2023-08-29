@@ -1,0 +1,568 @@
+.courses {
+    display: flex;
+    width: 100%;
+    background: $white;
+    padding: 60px 0;
+
+    @include media-min("md") {
+        padding: 80px 0;
+    }
+
+    @include media-min("xl") {
+        padding: 100px 0;
+    }
+
+    &__head {
+        margin-bottom: 40px;
+
+        @include media-min("xl") {
+            margin-bottom: 60px;
+        }
+
+        h1 {
+            margin: 0;
+            font-family: 'Mulish';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 110%;
+            color: $black;
+
+            @include media-min("md") {
+                font-size: 32px;
+            }
+
+            @include media-min("xl") {
+                font-size: 48px;
+            }
+
+            @include media-min("hd") {
+                font-size: 64px;
+            }
+        }
+    }
+
+    &__body {
+        padding: 40px 20px 10px;
+        margin-bottom: 10px;
+        background: $bggrey;
+
+        @include media-min("md") {
+            padding: 80px 60px 40px;
+        }
+
+        @include media-min("xl") {
+            padding: 100px 100px 60px;
+        }
+    }
+
+    &__row {
+        display: flex;
+        flex-direction: column;
+
+        @include media-min("xl") {
+            flex-direction: row;
+        }
+    }
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        @include media-min("xl") {
+            width: 77%;
+        }
+    }
+
+    &__columnTitle {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-bottom: 40px;
+
+
+
+        @include media-min("md") {
+            margin-bottom: 60px;
+        }
+
+        @include media-min("xl") {
+            margin-bottom: 0;
+            margin-right: 120px;
+            gap: 20px;
+            max-width: 350px;
+        }
+
+        h2 {
+            margin: 0;
+            font-family: 'Mulish';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 25px;
+            color: $blue;
+
+            @include media-min("md") {
+                font-size: 24px;
+                line-height: 30px;
+            }
+
+            @include media-min("xl") {
+                font-size: 28px;
+                line-height: 35px;
+            }
+        }
+
+        p {
+            margin: 0;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 150%;
+            color: $black;
+
+            @include media-min("md") {
+                font-size: 16px;
+            }
+
+        }
+
+        .weight {
+            font-weight: 400;
+        }
+
+
+
+    }
+
+    &__columnInput {
+
+
+        &__title {
+            margin-bottom: 12px;
+
+            h3 {
+                margin: 0;
+                font-family: 'Mulish';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 18px;
+                color: $black;
+
+                @include media-min("xl") {
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+            }
+        }
+
+        &__field {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+            position: relative;
+
+
+            @include media-max("md") {
+                margin-bottom: 30px;
+            }
+
+            input[type="text"],
+            textarea {
+                border: 0;
+                outline: none;
+                border-bottom: 2px solid #ABABAB;
+                background-color: $white;
+                width: 100%;
+                padding: 16px 20px;
+                font-family: 'Mulish';
+                font-size: 14px;
+                line-height: 18px;
+                color: $black;
+                height: 18px;
+                position: relative;
+
+                &:focus {
+                    background-color: rgba(53, 106, 210, 0.06);
+                    border-bottom-color: $blue;
+                }
+
+                @include media-min("md") {
+                    padding: 20px;
+                    height: 18px;
+                }
+
+                @include media-min("xl") {
+                    font-size: 16px;
+                    line-height: 20px;
+                    height: 20px
+                }
+            }
+
+            input[type="text"]+label,
+            textarea+label {
+                position: absolute;
+                color: $border1;
+                font-family: 'Mulish';
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 18px;
+                top: 16px;
+                left: 20px;
+
+                @include media-min("md") {
+                    top: 20px;
+                    left: 20px;
+                }
+
+                @include media-min("xl") {
+                    font-size: 16px;
+                }
+            }
+
+            input[type="password"],
+            textarea {
+                border: 0;
+                outline: none;
+                border-bottom: 2px solid #ABABAB;
+                background-color: $white;
+                width: 100%;
+                padding: 16px 20px;
+                font-family: 'Mulish';
+                font-size: 14px;
+                line-height: 18px;
+                color: $black;
+                height: 18px;
+                position: relative;
+
+                &:focus {
+                    background-color: rgba(53, 106, 210, 0.06);
+                    border-bottom-color: $blue;
+                }
+
+                @include media-min("md") {
+                    padding: 20px;
+                    height: 18px;
+                }
+
+                @include media-min("xl") {
+                    font-size: 16px;
+                    line-height: 20px;
+                    height: 20px
+                }
+            }
+
+            input[type="password"]+label,
+            textarea+label {
+                position: absolute;
+                color: $border1;
+                font-family: 'Mulish';
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 18px;
+                top: 16px;
+                left: 20px;
+
+                @include media-min("md") {
+                    top: 20px;
+                    left: 20px;
+                }
+
+                @include media-min("xl") {
+                    font-size: 16px;
+                }
+            }
+
+
+
+
+            textarea {
+                height: 92px;
+            }
+
+            input[type="text"]:not(:placeholder-shown)+label,
+            textarea:not(:placeholder-shown)+label {
+                display: none;
+            }
+
+            input[type="text"]:focus+label,
+            textarea:focus+label {
+                display: none;
+            }
+
+            input[type="password"]:not(:placeholder-shown)+label,
+            textarea:not(:placeholder-shown)+label {
+                display: none;
+            }
+
+            input[type="password"]:focus+label,
+            textarea:focus+label {
+                display: none;
+            }
+        }
+
+        &__bodyCheck {
+            padding: 40px 20px 20px;
+            margin-bottom: 10px;
+            background: $bggrey;
+
+            @include media-min("md") {
+                padding: 80px 60px 60px;
+            }
+
+            @include media-min("xl") {
+                padding: 100px 100px 80px;
+            }
+        }
+
+        &__check {
+            position: absolute;
+            z-index: -1;
+            opacity: 0;
+
+
+            &+label {
+                display: inline-flex;
+                align-items: center;
+                user-select: none;
+                margin-bottom: 20px;
+
+                @include media-min("xl") {
+                    max-width: 480px;
+                }
+
+                h4 {
+                    margin: 0;
+                    color: $black;
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 140%;
+
+                    @include media-min("md") {
+                        font-size: 16px;
+                    }
+
+                    .classes {
+                        font-weight: 300;
+                    }
+                }
+
+
+            }
+
+
+
+            &+label::before {
+                content: '';
+                display: inline-block;
+                width: 18px;
+                height: 18px;
+                flex-shrink: 0;
+                flex-grow: 0;
+                border: 1px solid $border1;
+
+                margin-right: 16px;
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: 50% 50%;
+            }
+
+            &:checked+label::before {
+                background: $blue;
+                border-color: $blue;
+                background-image: url("C:\\Users\\Admin\\Desktop\\it-academy\\img\\check.svg");
+                background-size: 10px 10px;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            &:not(:disabled):not(:checked)+label:hover::before {
+                border-color: $blue;
+            }
+
+        }
+    }
+
+    &__button {
+        display: flex;
+        position: relative;
+        justify-content: end;
+        padding-right: 18px;
+        margin-left: 18px;
+        padding-top: 40px;
+
+        @include media-max("xl") {
+            padding-top: 30px;
+        }
+
+        button {
+            a {
+                text-align: center;
+                vertical-align: top;
+                padding: 12px 30px;
+
+                color: $white;
+                text-decoration: none;
+                font-family: 'Mulish';
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 18px;
+            }
+
+
+            border: none;
+            display: flex;
+            background: $blue;
+            position: relative;
+            justify-content: center;
+
+            @include media-max("md") {
+                width: 100%;
+            }
+
+
+
+
+            &:before {
+                content: '';
+                display: block;
+                clear: both;
+                width: 0;
+                height: 0;
+                border-left: 18px solid transparent;
+                border-bottom: 44px solid $blue;
+                position: absolute;
+                top: 0;
+                left: -18px;
+            }
+
+            &:after {
+                content: '';
+                display: block;
+                clear: both;
+                width: 0;
+                height: 0;
+                border-right: 18px solid transparent;
+                border-top: 44px solid $blue;
+                position: absolute;
+                top: 0;
+                right: -18px;
+            }
+
+            &:hover {
+                background: #2152B2;
+            }
+
+            &:hover:before {
+
+                border-bottom: 44px solid #2152B2;
+
+            }
+
+            &:hover:after {
+                border-top: 44px solid #2152B2;
+
+            }
+
+        }
+    }
+
+    &__buttonEntry {
+        display: flex;
+        position: relative;
+        justify-content: end;
+        padding-right: 18px;
+        margin-left: 18px;
+        padding-top: 10px;
+
+        button {
+            a {
+                text-align: center;
+                vertical-align: top;
+                padding: 12px 30px;
+
+                color: $white;
+                text-decoration: none;
+                font-family: 'Mulish';
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 18px;
+            }
+
+
+            border: none;
+            display: flex;
+            background: $blue;
+            position: relative;
+            justify-content: center;
+
+            @include media-max("md") {
+                width: 100%;
+            }
+
+
+
+
+            &:before {
+                content: '';
+                display: block;
+                clear: both;
+                width: 0;
+                height: 0;
+                border-left: 18px solid transparent;
+                border-bottom: 44px solid $blue;
+                position: absolute;
+                top: 0;
+                left: -18px;
+            }
+
+            &:after {
+                content: '';
+                display: block;
+                clear: both;
+                width: 0;
+                height: 0;
+                border-right: 18px solid transparent;
+                border-top: 44px solid $blue;
+                position: absolute;
+                top: 0;
+                right: -18px;
+            }
+
+            &:hover {
+                background: #2152B2;
+            }
+
+            &:hover:before {
+
+                border-bottom: 44px solid #2152B2;
+
+
+            }
+
+            &:hover:after {
+                border-top: 44px solid #2152B2;
+
+            }
+
+        }
+    }
+
+    &__bodyForEntry {
+        padding: 40px 20px;
+        background: $bggrey;
+
+        @include media-min("md") {
+            padding: 80px 60px;
+        }
+
+        @include media-min("xl") {
+            padding: 100px;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+$sizes: (
+    "sm":576px,
+    "md":768px,
+    "xl":1280px,
+    "hd": 1920px
+);
+
+@mixin media-max($media) {
+
+    @each $size,
+    $resolution in $sizes {
+        @if $media==$size {
+            @media only screen and (max-width: ($resolution)-0.5) {
+                @content;
+            }
+        }
+    }
+}
+
+@mixin media-min($media) {
+
+    @each $size,
+    $resolution in $sizes {
+        @if $media==$size {
+            @media only screen and (min-width: $resolution) {
+                @content;
+            }
+        }
+    }
+}

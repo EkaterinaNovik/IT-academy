@@ -1,0 +1,214 @@
+.about {
+
+    width: 100%;
+
+    @include media-min("md") {
+        display: flex;
+    }
+
+    &__body {
+
+        padding: 60px 0;
+
+        @include media-min("md") {
+            width: 50%;
+        }
+
+        @include media-min("xl") {
+
+            padding: 80px 0;
+        }
+
+        @include media-min("hd") {
+            padding: 140px 0;
+        }
+
+    }
+
+    &__image {
+
+
+
+
+        picture {
+            display: flex;
+
+        }
+
+        img {
+            flex: 1 1 auto;
+            max-width: 100%;
+
+        }
+
+        @include media-min("md") {
+            position: relative;
+            flex: 0 0 49.5%;
+            transform: translate(-100%, 0px);
+
+            img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                right: 0;
+                object-fit: cover;
+            }
+        }
+
+
+    }
+
+    &__content {
+        flex: 0 0 100%;
+
+    }
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+            margin: 0;
+            font-family: 'Mulish';
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 25px;
+            color: $blue;
+
+            @include media-min("md") {
+                font-size: 24px;
+            }
+
+            @include media-min("xl") {
+                font-size: 32px;
+            }
+        }
+
+        p {
+            margin: 0;
+            padding-top: 20px;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 150%;
+            color: black;
+
+
+            @include media-min("md") {
+                font-size: 14px;
+            }
+
+            @include media-min("xl") {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+.addition {
+    width: 100%;
+    background-color: $bggrey;
+
+
+    @include media-max("md") {
+
+        position: relative;
+        justify-content: end;
+    }
+
+
+    @include media-min("md") {
+        display: flex;
+    }
+
+    button {
+        a {
+            text-align: center;
+            vertical-align: top;
+            padding: 12px 30px;
+
+            color: $white;
+            text-decoration: none;
+            font-family: 'Mulish';
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18px;
+
+            @include media-min("xl") {
+                padding: 16px 35px;
+            }
+        }
+
+        border: none;
+        display:flex;
+        background: $blue;
+        position: relative;
+        margin-top:40px;
+        margin-left:18px;
+        margin-right:18px;
+        justify-content: center;
+
+        @include media-max("md") {
+
+            width: -webkit-fill-available;
+        }
+
+        &:before {
+            content: '';
+            display: block;
+            clear: both;
+            width: 0;
+            height: 0;
+            border-left: 18px solid transparent;
+            border-bottom: 44px solid $blue;
+            position: absolute;
+            top: 0;
+            left: -18px;
+
+            @include media-min("xl") {
+                border-bottom: 52px solid $blue;
+            }
+        }
+
+        &:after {
+            content: '';
+            display: block;
+            clear: both;
+            width: 0;
+            height: 0;
+            border-right: 18px solid transparent;
+            border-top: 44px solid $blue;
+            position: absolute;
+            top: 0;
+            right: -18px;
+
+            @include media-min("xl") {
+                border-top: 52px solid $blue;
+            }
+        }
+
+        &:hover {
+            background: #2152B2;
+        }
+
+        &:hover:before {
+
+            border-bottom: 44px solid #2152B2;
+
+            @include media-min("xl") {
+                border-bottom: 52px solid #2152B2;
+            }
+
+        }
+
+        &:hover:after {
+            border-top: 44px solid #2152B2;
+
+            @include media-min("xl") {
+                border-top: 52px solid #2152B2;
+            }
+        }
+    }
+}
