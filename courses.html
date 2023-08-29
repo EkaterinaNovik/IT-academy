@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Запись на курсы</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;900&family=Open+Sans:wght@300;400&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <!---------------------------------------------------------------HEADER--------------------------------------------------------------------------------------------->
+    <div class="header">
+        <div class="container">
+            <div class="header_container">
+                <div class="header_logoandtext">
+                    <a href="index.html">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="./img/logoPhone.svg">
+                            <source media="(min-width: 768px) and (max-width:1279px)" srcset="./img/logoPlanshet.svg">
+                            <img src="./img/logoComp.svg" alt="logo">
+                        </picture>
+                    </a>
+                    <div class="header_logoandtext_name">
+                        <h1><span class="colortext">IT</span>-академия "МИР будущего"</h1>
+                        <p>Учреждение образования “Витебский государственный университет имени П. М. Машерова”</p>
+                    </div>
+                    <div class="header_phone">
+                        <a href="tel:+375333179502">
+                            <h4><img src="./img/phoneHeaderComp.svg" alt="phone">+375 (33) 317-95-02</h4>
+                        </a>
+                        <a href="tel:80212375836">
+                            <h4><img src="./img/phoneHeaderComp.svg" alt="phone">8 (0212) 37-58-36</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header">
+        <div class="container">
+            <div class="header_container">
+                <div class="header__menu">
+                    <ul class="menu">
+                        <li class="menu_item">
+                            <a href="index.html">Главная</a>
+                        </li>
+                        <li class="menu_item">
+                            <a href="#" class="menu_item_sub-menu">Секции
+
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="sub-menu__item">
+                                    <a href="math.html">Математика</a>
+                                </li>
+                                <li class="sub-menu__item">
+                                    <a href="programming.html">Программирование</a>
+                                </li>
+                                <li class="sub-menu__item">
+                                    <a href="robots.html">Робототехника</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu_item">
+                            <a href="#" class="menu_item_sub-menu">
+                                Академия
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="sub-menu__item">
+                                    <a href="employees.html">Сотрудники</a>
+                                </li>
+                                <li class="sub-menu__item">
+                                    <a href="gallery.html">Галерея</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu_item">
+                            <a href="news.html">Новости</a>
+                        </li>
+                        <li class="menu_item">
+                            <a href="contacts.html">Контакты</a>
+                        </li>
+                        <li class="menu_item">
+                            <a href="user.html">Профиль</a>
+                        </li>
+                    </ul>
+                    <div class="header__buttonContainer"> <button><a href="courses.html">Записаться на
+                                курсы</a></button></div>
+
+                </div>
+                <!---------------------------------------------------------------MOBILE MENU-------------------------------------------------------------------------->
+                <div class="header__mobileContent">
+
+                    <div class="header__mobile"><a href="tel:+375333179502">
+                            <h5><img src="./img/phonePlanshet.svg" alt="phone">+375 (33) 317-95-02</h5>
+                        </a>
+                        <a href="tel:80212375836">
+                            <h5><img src="./img/phonePlanshet.svg" alt="phone">8 (0212) 37-58-36</h5>
+                        </a>
+                    </div>
+                    <div class="header__mobile-menu">
+                        <a href="#">&nbsp;</a>
+                    </div>
+                </div>
+
+                <div class="mobile-menu__block ">
+                    <div class="mobile-menu__body">
+                        <div class="mobile-menu__top">
+                            <div class="mobile-menu__logo">
+                                <picture>
+                                    <source media="(max-width: 767px)" srcset="./img/logoPhone.svg">
+                                    <img src="./img/logoPlanshet.svg" alt="logo">
+                                </picture>
+                            </div>
+                            <div class="mobile-menu__close"><a href>&nbsp;</a></div>
+                        </div>
+                        <ul class="mobile-menu__nav">
+                            <li class="mobile-menu__item"><a href="index.html">Главная</a></li>
+                            <li class="mobile-menu__item1">
+                                <a href="#" data-toggle="mobile-menu__item1_sub-menu">Секции
+                                </a>
+                                <ul class="sub-menu">
+                                    <li class="sub-menu__item">
+                                        <a href="math.html">Математика</a>
+                                    </li>
+                                    <li class="sub-menu__item">
+                                        <a href="programming.html">Программирование</a>
+                                    </li>
+                                    <li class="sub-menu__item">
+                                        <a href="robots.html">Робототехника</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="mobile-menu__item1">
+                                <a href="#" data-toggle="mobile-menu__item1_sub-menu">Академия
+                                </a>
+                                <ul class="sub-menu">
+                                    <li class="sub-menu__item">
+                                        <a href="employees.html">Сотрудники</a>
+                                    </li>
+                                    <li class="sub-menu__item">
+                                        <a href="gallery.html">Фотогалерея</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="mobile-menu__item"><a href="news.html">Новости</a></li>
+                            <li class="mobile-menu__item"><a href="contacts.html">Контакты</a></li>
+                            <li class="mobile-menu__item"><a href="user.html">Профиль</a></li>
+                            <button><a href="courses.html">Записаться на курсы</a></button>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------------------------------------------------------HEADER-------------------------------------------------------------------------->
+    <!---------------------------------------------------------------COURSES-------------------------------------------------------------------------->
+    <div class="courses">
+        <div class="container">
+            <div class="courses__head">
+                <h1>Запись на курсы</h1>
+            </div>
+            <div class="courses__body">
+
+                <form action class="courses__row" name="user_form" id="user_form">
+
+                    <div class="courses__columnTitle">
+                        <h2>Информация о слушателе</h2>
+                        <p>Здесь нужно ввести данные о слушателе, которые будет посещать занятия</p>
+                    </div>
+                    <div class="courses__column">
+                        <div class="courses__columnInput">
+                            <div class="courses__columnInput__title">
+                                <h3>Введите ФИО</h3>
+                            </div>
+                            <div class="courses__columnInput__field">
+                                <input type="text" name="user_name" id="user_name" value placeholder=" ">
+                                <label for="user_name">Введите ФИО</label>
+                            </div>
+                        </div>
+                        <div class="courses__columnInput">
+                            <div class="courses__columnInput__title">
+                                <h3>Введите номер школы или гимназии</h3>
+                            </div>
+                            <div class="courses__columnInput__field">
+                                <input type="text" name="user_school" id="user_school" value placeholder=" ">
+                                <label for="user_school">Номер школы</label>
+                            </div>
+                        </div>
+                        <div class="courses__columnInput">
+                            <div class="courses__columnInput__title">
+                                <h3>Введите класс</h3>
+                            </div>
+                            <div class="courses__columnInput__field">
+                                <input type="text" name="user_class" id="user_class" value placeholder=" ">
+                                <label for="user_class">Класс</label>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+            <!------------------------------------------------------------------------------------------------------------------------------------->
+            <div class="courses__body">
+
+                <form action class="courses__row" name="parent_form" id="parent_form">
+
+                    <div class="courses__columnTitle">
+                        <h2>Информация о законном представителе</h2>
+                        <p>Представитель - это родственник, на кого будет оформляться договор. Это может быть мама,
+                            папа, бабушка или дедушка.</p>
+                    </div>
+                    <div class="courses__column">
+                        <div class="courses__columnInput">
+                            <div class="courses__columnInput__title">
+                                <h3>Введите телефон представителя</h3>
+                            </div>
+                            <div class="courses__columnInput__field">
+                                <input type="text" name="parent_phone" id="parent_phone" value placeholder=" ">
+                                <label for="parent_phone">Телефон представителя</label>
+                            </div>
+                        </div>
+                        <div class="courses__columnInput">
+                            <div class="courses__columnInput__title">
+                                <h3>Введите ФИО представителя</h3>
+                            </div>
+                            <div class="courses__columnInput__field">
+                                <input type="text" name="parent_name" id="parent_name" value placeholder=" ">
+                                <label for="parent_name">ФИО представителя</label>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+            <!--------------------------------------------------------------------------------------------------------------------------------------------------->
+            <div class="courses__columnInput__bodyCheck">
+
+                <form action class="courses__row" name="course_form" id="course_form">
+
+                    <div class="courses__columnTitle">
+                        <h2>Выбор курса</h2>
+                        <p>Здесь необходимо выбрать понравившийся курс. Если дисциплина Вас не интересует, то можно
+                            просто пропустить. </p>
+                        <p><span class="weight">При выборе курсов обращайте внимание на рекомендованные классы (на
+                                2022/2023 уч. год)</span></p>
+                    </div>
+
+
+                    <div class="courses__column">
+                        <div class="courses__columnInput">
+                            <input type="checkbox" class="courses__columnInput__check" id="english" name="english">
+                            <label for="english">
+                                <h4>Английский для IT <span class="classes"> (5-7 классы)</span></h4>
+                            </label>
+                        </div>
+
+
+
+                        <div class="courses__columnInput">
+                            <input type="checkbox" class="courses__columnInput__check"
+                                id="AlgorithmizationAndProgramming" name="AlgorithmizationAndProgramming">
+                            <label for="AlgorithmizationAndProgramming">
+                                <h4>Алгоритмизация и программирование <span class="classes"> (8-11 кл., для
+                                        начин.)</span></h4>
+                            </label>
+                        </div>
+
+
+
+                        <div class="courses__columnInput">
+                            <input type="checkbox" class="courses__columnInput__check" id="VR" name="VR">
+                            <label for="VR">
+                                <h4>Виртуальная и дополненная реальность<span class="classes"> (7-8
+                                        классы)</span></h4>
+                            </label>
+                        </div>
+
+
+
+                        <div class="courses__columnInput">
+                            <input type="checkbox" class="courses__columnInput__check" id="webDesign" name="webDesign">
+                            <label for="webDesign">
+                                <h4>Компьютерная графика и веб-дизайн<span class="classes"> (6-7
+                                        классы)</span></h4>
+                            </label>
+                        </div>
+
+
+
+                        <div class="courses__columnInput">
+                            <input type="checkbox" class="courses__columnInput__check" id="maths911" name="maths911">
+                            <label for="maths911">
+                                <h4>Подготовка к ЦТ по математике<span class="classes"> (9-11
+                                        классы)</span></h4>
+                            </label>
+                        </div>
+
+
+                        <div class="courses__columnInput">
+                            <input type="checkbox" class="courses__columnInput__check" id="physics911"
+                                name="physics911">
+                            <label for="physics911">
+                                <h4>Подготовка к ЦТ по физике<span class="classes"> (9-11
+                                        классы)</span></h4>
+                            </label>
+                        </div>
+
+
+
+                        <div class="courses__columnInput">
+                            <input type="checkbox" class="courses__columnInput__check" id="maths34" name="maths34">
+                            <label for="maths34">
+                                <h4>Математика<span class="classes"> (3-4 классы)</span></h4>
+                            </label>
+                        </div>
+
+
+
+                        <div class="courses__columnInput">
+                            <input type="checkbox" class="courses__columnInput__check" id="maths59" name="maths59">
+                            <label for="maths59">
+                                <h4>Математика<span class="classes"> (5-9 классы)</span></h4>
+                            </label>
+                        </div>
+
+
+
+                        <div class="courses__columnInput">
+                            <input type="checkbox" class="courses__columnInput__check" id="arduino79" name="arduino79">
+                            <label for="arduino79">
+                                <h4>Робототехника Arduino<span class="classes"> (7-9
+                                        классы)</span></h4>
+                            </label>
+                        </div>
+
+
+                        <div class="courses__columnInput">
+                            <input type="checkbox" class="courses__columnInput__check" id="legoEV357" name="legoEV357">
+                            <label for="legoEV357">
+                                <h4>Робототехника LEGO EV3<span class="classes"> (5-7 классы, для
+                                        начинающих)</span></h4>
+                            </label>
+                        </div>
+
+
+
+                        <div class="courses__columnInput">
+                            <input type="checkbox" class="courses__columnInput__check" id="legoEV368" name="legoEV368">
+                            <label for="legoEV368">
+                                <h4>Робототехника LEGO EV3<span class="classes"> (6-8 кл.,для
+                                        продолжающих)</span></h4>
+                            </label>
+                        </div>
+
+
+
+                        <div class="courses__columnInput">
+                            <input type="checkbox" class="courses__columnInput__check" id="legoScratch"
+                                name="legoScratch">
+                            <label for="legoScratch">
+                                <h4>Робототехника LEGO+Scratch<span class="classes"> (3-4
+                                        классы)</span></h4>
+                            </label>
+                        </div>
+
+
+
+                        <div class="courses__columnInput">
+                            <input type="checkbox" class="courses__columnInput__check" id="legoWeDo" name="legoWeDo">
+                            <label for="legoWeDo">
+                                <h4>Робототехника LEGO WeDo<span class="classes"> (2-4
+                                        классы)</span></h4>
+                            </label>
+                        </div>
+
+
+                        <div class="courses__columnInput">
+                            <input type="checkbox" class="courses__columnInput__check" id="3D" name="3D">
+                            <label for="3D">
+                                <h4>3D-моделирование и 3D-печать<span class="classes"> (8-10
+                                        классы)</span></h4>
+                            </label>
+                        </div>
+
+
+
+                        <div class="courses__columnInput">
+                            <input type="checkbox" class="courses__columnInput__check" id="Scratch34Beg"
+                                name="Scratch34Beg">
+                            <label for="Scratch34Beg">
+                                <h4>Scratch-программирование<span class="classes"> (3-4 классы, для
+                                        начинающих)</span></h4>
+                            </label>
+                        </div>
+
+
+
+                        <div class="courses__columnInput">
+                            <input type="checkbox" class="courses__columnInput__check" id="Scratch34Pro"
+                                name="Scratch34Pro">
+                            <label for="Scratch34Pro">
+                                <h4>Scratch-программирование<span class="classes"> (3-4 кл., для
+                                        продолжающих)</span></h4>
+                            </label>
+                        </div>
+
+
+
+                        <div class="courses__columnInput">
+                            <input type="checkbox" class="courses__columnInput__check" id="Scratch56Pro"
+                                name="Scratch56Pro">
+                            <label for="Scratch56Pro">
+                                <h4>Scratch-программирование<span class="classes"> (5-6 классы,
+                                        продвинутый уровень)</span></h4>
+                            </label>
+                        </div>
+
+
+
+                        <div class="courses__columnInput">
+                            <input type="checkbox" class="courses__columnInput__check" id="Web79" name="Web79">
+                            <label for="Web79">
+                                <h4>Web-программирование<span class="classes"> (7-9 классы, для
+                                        начинающих)</span></h4>
+                            </label>
+                        </div>
+
+
+                        <div class="courses__columnInput">
+                            <input type="checkbox" class="courses__columnInput__check" id="Web811" name="Web811">
+                            <label for="Web811">
+                                <h4>Web-программирование<span class="classes"> (8-11кл., для
+                                        продолжающих)</span></h4>
+                            </label>
+                        </div>
+
+
+
+                        <div class="courses__columnInput">
+                            <input type="checkbox" class="courses__columnInput__check" id="Java811" name="Java811">
+                            <label for="Java811">
+                                <h4>Java для начинающих<span class="classes"> (8-11
+                                        классы)</span></h4>
+                            </label>
+                        </div>
+
+
+
+                        <div class="courses__columnInput">
+                            <input type="checkbox" class="courses__columnInput__check" id="Java911" name="Java911">
+                            <label for="Java911">
+                                <h4>Java для продолжающих<span class="classes"> (9-11
+                                        классы)</span></h4>
+                            </label>
+                        </div>
+
+
+
+                        <div class="courses__columnInput">
+                            <input type="checkbox" class="courses__columnInput__check" id="py67" name="py67">
+                            <label for="py67">
+                                <h4>Python для начинающих<span class="classes"> (6-7 классы)</span></h4>
+                            </label>
+                        </div>
+
+
+
+
+                        <div class="courses__columnInput">
+                            <input type="checkbox" class="courses__columnInput__check" id="py79" name="py79">
+                            <label for="py79">
+                                <h4>Python для продолжающих<span class="classes"> (разработка игр, 7-9
+                                        классы)</span></h4>
+                            </label>
+                        </div>
+
+
+
+                    </div>
+                </form>
+            </div>
+            <!--------------------------------------------------------------------------------------------------------------------------------------------------->
+            <div class="courses__columnInput__bodyCheck">
+
+                <form action class="courses__row" name="time_form" id="time_form">
+
+                    <div class="courses__columnTitle">
+                        <h2>Время</h2>
+                        <p>Мы предлагаем Вам указать возможное время посещения академии. </p>
+                        <p><span class="weight">Занятия проходят по субботам.</span></p>
+                    </div>
+
+
+                    <div class="courses__column">
+                        <div class="courses__columnInput">
+                            <input type="checkbox" class="courses__columnInput__check" id="time1" name="time1">
+                            <label for="time1">
+                                <h4>9:35-11:00</h4>
+                            </label>
+                        </div>
+
+
+
+                        <div class="courses__columnInput">
+                            <input type="checkbox" class="courses__columnInput__check" id="time2" name="time2">
+                            <label for="time2">
+                                <h4>11:30-12:55</h4>
+                            </label>
+                        </div>
+
+
+
+                        <div class="courses__columnInput">
+                            <input type="checkbox" class="courses__columnInput__check" id="time3" name="time3">
+                            <label for="time3">
+                                <h4>13:05-14:30</h4>
+                            </label>
+                        </div>
+
+
+
+                        <div class="courses__columnInput">
+                            <input type="checkbox" class="courses__columnInput__check" id="time4" name="time4">
+                            <label for="time4">
+                                <h4>14:40-16:05</h4>
+                            </label>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+            <div class="courses__button">
+                <button><a href="courses.html">Записаться на курсы</a></button>
+            </div>
+        </div>
+    </div>
+    <!---------------------------------------------------------------FOOTER------------------------------------------------------------------------->
+    <div class="footer">
+        <div class="container">
+            <div class="footer__body">
+                <div class="header_logoandtext">
+                    <a href="index.html">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="./img/logoPhone.svg">
+                            <source media="(min-width: 768px) and (max-width:1279px)" srcset="./img/logoPlanshet.svg">
+                            <img src="./img/logoComp.svg" alt="logo">
+                        </picture>
+                    </a>
+                    <div class="header_logoandtext_name">
+                        <h1><span class="colortext">IT</span>-академия "МИР будущего"</h1>
+                        <p>Учреждение образования “Витебский государственный университет имени П. М. Машерова”</p>
+                    </div>
+                </div>
+                <div class="footer__mapAndAddress">
+                    <div class="footer__mapAndAddress_map"><iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2278.3152166000073!2d30.22274747717152!3d55.17775593613549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46c57143a61e40fd%3A0x5960681ffa5e4d72!2z0JLQuNGC0LXQsdGB0LrQuNC5INCz0L7RgdGD0LTQsNGA0YHRgtCy0LXQvdC90YvQuSDRg9C90LjQstC10YDRgdC40YLQtdGCINC40LzQtdC90Lgg0J8u0JwuINCc0LDRiNC10YDQvtCy0LA!5e0!3m2!1sru!2sby!4v1685653900047!5m2!1sru!2sby"
+                            width="680" height="334" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                    <div class="footer__contacts">
+                        <h1>Наши контакты</h1>
+                        <div class="footer_phone">
+                            <a href="tel:+375333179502">
+                                <h4>
+                                    <picture>
+                                        <source media="(max-width:1279px)" srcset="./img/phonePlanshet.svg">
+                                        <img src="./img/phoneHeaderComp.svg" alt="phone">
+                                    </picture>+375 (33) 317-95-02
+                                </h4>
+                            </a>
+                            <a href="tel:80212375836">
+                                <h4>
+                                    <picture>
+                                        <source media="(max-width:1279px)" srcset="./img/phonePlanshet.svg">
+                                        <img src="./img/phoneHeaderComp.svg" alt="phone">
+                                    </picture>8 (0212) 37-58-36
+                                </h4>
+                            </a>
+                            <a href="mailto:fmiit@vsu.by">
+                                <h4>
+                                    <picture>
+                                        <source media="(max-width:1279px)" srcset="./img/mailPhone.svg">
+                                        <img src="./img/mailComp.svg" alt="mail">
+                                    </picture>fmiit@vsu.by
+                                </h4>
+                            </a>
+
+                            <h4>
+                                <picture>
+                                    <source media="(max-width:1279px)" srcset="./img/geoPhone.svg">
+                                    <img src="./img/geoComp.svg" alt="geolocation">
+                                </picture>Республика Беларусь 210038, г. Витебск, Московский проспект 33
+                            </h4>
+
+                        </div>
+                        <div class="footer__social">
+                            <h1>Социальные сети</h1>
+                            <div class="footer__social_photo">
+                                <a href="https://t.me/fmiit_vsu">
+                                    <picture>
+                                        <source media="(max-width:1279px)" srcset="./img/telegramPh.svg">
+                                        <img src="./img/telegram.svg" alt="telegram">
+                                    </picture>
+                                </a>
+                                <a href="https://instagram.com/fmiit_vsu?igshid=MzRIODBiNWFIZA==">
+                                    <picture>
+                                        <source media="(max-width:1279px)" srcset="./img/instPh.svg">
+                                        <img src="./img/instagram.svg" alt="instagram">
+                                    </picture>
+                                </a>
+                                <a href="https://vk.com/mf_vsu">
+                                    <picture>
+                                        <source media="(max-width:1279px)" srcset="./img/vkPh.svg">
+                                        <img src="./img/vk.svg" alt="vkontakte">
+                                    </picture>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__rights">
+                    <p>© 2023 ВГУ имени П.М.Машерова. Все права защищены.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
