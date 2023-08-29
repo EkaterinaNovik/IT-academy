@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;900&family=Open+Sans:wght@300;400&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <!---------------------------------------------------------------HEADER--------------------------------------------------------------------------------------------->
+    <div class="header">
+        <div class="container">
+            <div class="header_container">
+                <div class="header_logoandtext">
+                    <a href="index.html">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="./img/logoPhone.svg">
+                            <source media="(min-width: 768px) and (max-width:1279px)" srcset="./img/logoPlanshet.svg">
+                            <img src="./img/logoComp.svg" alt="logo">
+                        </picture>
+                    </a>
+                    <div class="header_logoandtext_name">
+                        <h1><span class="colortext">IT</span>-академия "МИР будущего"</h1>
+                        <p>Учреждение образования “Витебский государственный университет имени П. М. Машерова”</p>
+                    </div>
+                    <div class="header_phone">
+                        <a href="tel:+375333179502">
+                            <h4><img src="./img/phoneHeaderComp.svg" alt="phone">+375 (33) 317-95-02</h4>
+                        </a>
+                        <a href="tel:80212375836">
+                            <h4><img src="./img/phoneHeaderComp.svg" alt="phone">8 (0212) 37-58-36</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header">
+        <div class="container">
+            <div class="header_container">
+                <div class="header__menu">
+                    <ul class="menu">
+                        <li class="menu_item">
+                            <a href="index.html">Главная</a>
+                        </li>
+                        <li class="menu_item">
+                            <a href="#" class="menu_item_sub-menu">Секции
+
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="sub-menu__item">
+                                    <a href="math.html">Математика</a>
+                                </li>
+                                <li class="sub-menu__item">
+                                    <a href="programming.html">Программирование</a>
+                                </li>
+                                <li class="sub-menu__item">
+                                    <a href="robots.html">Робототехника</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu_item">
+                            <a href="#" class="menu_item_sub-menu">
+                                Академия
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="sub-menu__item">
+                                    <a href="employees.html">Сотрудники</a>
+                                </li>
+                                <li class="sub-menu__item">
+                                    <a href="gallery.html">Галерея</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu_item">
+                            <a href="news.html">Новости</a>
+                        </li>
+                        <li class="menu_item">
+                            <a href="contacts.html">Контакты</a>
+                        </li>
+                        <li class="menu_item">
+                            <a href="user.html">Профиль</a>
+                        </li>
+                    </ul>
+                    <div class="header__buttonContainer"> <button><a href="courses.html">Записаться на
+                                курсы</a></button></div>
+
+                </div>
+                <!---------------------------------------------------------------MOBILE MENU-------------------------------------------------------------------------->
+                <div class="header__mobileContent">
+
+                    <div class="header__mobile"><a href="tel:+375333179502">
+                            <h5><img src="./img/phonePlanshet.svg" alt="phone">+375 (33) 317-95-02</h5>
+                        </a>
+                        <a href="tel:80212375836">
+                            <h5><img src="./img/phonePlanshet.svg" alt="phone">8 (0212) 37-58-36</h5>
+                        </a>
+                    </div>
+                    <div class="header__mobile-menu">
+                        <a href="#">&nbsp;</a>
+                    </div>
+                </div>
+
+                <div class="mobile-menu__block ">
+                    <div class="mobile-menu__body">
+                        <div class="mobile-menu__top">
+                            <div class="mobile-menu__logo">
+                                <picture>
+                                    <source media="(max-width: 767px)" srcset="./img/logoPhone.svg">
+                                    <img src="./img/logoPlanshet.svg" alt="logo">
+                                </picture>
+                            </div>
+                            <div class="mobile-menu__close"><a href>&nbsp;</a></div>
+                        </div>
+                        <ul class="mobile-menu__nav">
+                            <li class="mobile-menu__item"><a href="index.html">Главная</a></li>
+                            <li class="mobile-menu__item1">
+                                <a href="#" data-toggle="mobile-menu__item1_sub-menu">Секции
+                                </a>
+                                <ul class="sub-menu">
+                                    <li class="sub-menu__item">
+                                        <a href="math.html">Математика</a>
+                                    </li>
+                                    <li class="sub-menu__item">
+                                        <a href="programming.html">Программирование</a>
+                                    </li>
+                                    <li class="sub-menu__item">
+                                        <a href="robots.html">Робототехника</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="mobile-menu__item1">
+                                <a href="#" data-toggle="mobile-menu__item1_sub-menu">Академия
+                                </a>
+                                <ul class="sub-menu">
+                                    <li class="sub-menu__item">
+                                        <a href="employees.html">Сотрудники</a>
+                                    </li>
+                                    <li class="sub-menu__item">
+                                        <a href="gallery.html">Фотогалерея</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="mobile-menu__item"><a href="news.html">Новости</a></li>
+                            <li class="mobile-menu__item"><a href="contacts.html">Контакты</a></li>
+                            <li class="mobile-menu__item"><a href="user.html">Профиль</a></li>
+                            <button><a href="courses.html">Записаться на курсы</a></button>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------------------------------------------------------HEADER-------------------------------------------------------------------------->
+    <!-------------------------------------------------------------------ABOUT----------------------------------------------------------------------------------------------->
+    <div class="about ">
+        <div class="about__content">
+            <div class="container">
+                <div class="news__bodyPage">
+                    <div class="news__description">
+                        <h1>Новости</h1>
+                        <p>Здесь вы найдете самые свежие и интересные обновления о наших мероприятиях и достижениях. В
+                            разделе новостей вы также найдете важные объявления, которые могут касаться расписания
+                            занятий, изменений в программе обучения или других существенных обновлений. Мы стремимся
+                            предоставить вам только актуальную информацию.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about__image">
+            <picture>
+                <source media="(max-width: 767px)" srcset="./img/newsPhone.webp">
+                <source media="(min-width: 768px) and (max-width:1279px)" srcset="./img/newsPlanshet.webp">
+                <source media="(min-width: 1280px) and (max-width:1919px)" srcset="./img/newsLaptop.webp">
+                <img src="./img/newsComp.webp" alt="news">
+            </picture>
+        </div>
+    </div>
+    <!-------------------------------------------------------------------ABOUT----------------------------------------------------------------------------------------------->
+    <!-------------------------------------------------------------------NEWS----------------------------------------------------------------------------------------------->
+    <div class="news__page">
+        <div class="container">
+            <div class="news__columnPage">
+                <div class="news__row1">
+                    <div class="news__column1">
+                        <a href="article.html">
+                            <div class="news__item">
+                                <div class="news__card-picture">
+                                    <img src="./img/news11.webp" alt="news">
+                                    <div class="news__card-picture_bg"></div>
+                                    <button>Подробнее</button><time>01.05.2023</time>
+                                </div>
+                                <div class="news__hashtag">
+                                    <h3>#сми</h3>
+                                </div>
+                                <div class="news__card-title">
+                                    <h4>Конференция ProIT</h4>
+                                </div>
+                                <div class="news__card-description">
+                                    <p>Более 500 учащихся посетили конференцию ProIT</p>
+                                </div>
+
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="news__column1"><a href="article.html">
+                            <div class="news__item">
+                                <div class="news__card-picture">
+                                    <img src="./img/news22.webp" alt="news">
+                                    <div class="news__card-picture_bg"></div>
+                                    <button>Подробнее</button><time>01.05.2023</time>
+                                </div>
+                                <div class="news__hashtag">
+                                    <h3>#сми</h3>
+                                </div>
+                                <div class="news__card-title">
+                                    <h4>Витебский государственный университет имени П.М. Машерова и
+                                        компания EPAM Systems отметили 10-летие успешного сотрудничества</h4>
+                                </div>
+                                <div class="news__card-description">
+                                    <p>На базе факультета математики и информационных
+                                        технологий
+                                        состоялась конференция «Будущее за IT».</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="news__column1"><a href="article.html">
+                            <div class="news__item">
+                                <div class="news__card-picture">
+                                    <img src="./img/news33.webp" alt="news">
+                                    <div class="news__card-picture_bg"></div>
+                                    <button>Подробнее</button><time>01.05.2023</time>
+                                </div>
+                                <div class="news__hashtag">
+                                    <h3>#объявления</h3>
+                                </div>
+                                <div class="news__card-title">
+                                    <h4>Старт занятий будет 10 сентября!</h4>
+                                </div>
+                                <div class="news__card-description">
+                                    <p>Уважаемые родители! Старт занятий будет в IT-академии 10
+                                        и 17
+                                        сентября!</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="news__column1"><a href="article.html">
+                            <div class="news__item">
+                                <div class="news__card-picture">
+                                    <img src="./img/news44.webp" alt="news">
+                                    <div class="news__card-picture_bg"></div>
+                                    <button>Подробнее</button><time>01.05.2023</time>
+                                </div>
+                                <div class="news__hashtag">
+                                    <h3>#новости</h3>
+                                </div>
+                                <div class="news__card-title">
+                                    <h4>Прошли пробные занятия на базе ВГУ им. П.М. Машерова</h4>
+                                </div>
+                                <div class="news__card-description">
+                                    <p>29 апреля 2021 года состоялся заключительный этап
+                                        Витебского
+                                        открытого турнира "Математический BrainStorm"</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+
+
+                    <div class="news__column1"><a href="article.html">
+                            <div class="news__item">
+                                <div class="news__card-picture">
+                                    <img src="./img/news11.webp" alt="news">
+                                    <div class="news__card-picture_bg"></div>
+                                    <button>Подробнее</button><time>01.05.2023</time>
+                                </div>
+                                <div class="news__hashtag">
+                                    <h3>#сми</h3>
+                                </div>
+                                <div class="news__card-title">
+                                    <h4>Конференция ProIT</h4>
+                                </div>
+                                <div class="news__card-description">
+                                    <p>Более 500 учащихся посетили конференцию ProIT</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="news__column1"><a href="article.html">
+                            <div class="news__item">
+                                <div class="news__card-picture">
+                                    <img src="./img/news22.webp" alt="news">
+                                    <div class="news__card-picture_bg"></div>
+                                    <button>Подробнее</button><time>01.05.2023</time>
+                                </div>
+                                <div class="news__hashtag">
+                                    <h3>#сми</h3>
+                                </div>
+                                <div class="news__card-title">
+                                    <h4>Витебский государственный университет имени П.М. Машерова и
+                                        компания EPAM Systems отметили 10-летие успешного сотрудничества</h4>
+                                </div>
+                                <div class="news__card-description">
+                                    <p>На базе факультета математики и информационных
+                                        технологий
+                                        состоялась конференция «Будущее за IT».</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="news__column1"><a href="article.html">
+                            <div class="news__item">
+                                <div class="news__card-picture">
+                                    <img src="./img/news33.webp" alt="news">
+                                    <div class="news__card-picture_bg"></div>
+                                    <button>Подробнее</button><time>01.05.2023</time>
+                                </div>
+                                <div class="news__hashtag">
+                                    <h3>#объявления</h3>
+                                </div>
+                                <div class="news__card-title">
+                                    <h4>Старт занятий будет 10 сентября!</h4>
+                                </div>
+                                <div class="news__card-description">
+                                    <p>Уважаемые родители! Старт занятий будет в IT-академии 10
+                                        и 17
+                                        сентября!</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="news__column1"><a href="article.html">
+                            <div class="news__item">
+                                <div class="news__card-picture">
+                                    <img src="./img/news44.webp" alt="news">
+                                    <div class="news__card-picture_bg"></div>
+                                    <button>Подробнее</button><time>01.05.2023</time>
+                                </div>
+                                <div class="news__hashtag">
+                                    <h3>#новости</h3>
+                                </div>
+                                <div class="news__card-title">
+                                    <h4>Прошли пробные занятия на базе ВГУ им. П.М. Машерова</h4>
+                                </div>
+                                <div class="news__card-description">
+                                    <p>29 апреля 2021 года состоялся заключительный этап
+                                        Витебского
+                                        открытого турнира "Математический BrainStorm"</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+
+
+                    <div class="news__column1"><a href="article.html">
+                            <div class="news__item">
+                                <div class="news__card-picture">
+                                    <img src="./img/news11.webp" alt="news">
+                                    <div class="news__card-picture_bg"></div>
+                                    <button>Подробнее</button><time>01.05.2023</time>
+                                </div>
+                                <div class="news__hashtag">
+                                    <h3>#сми</h3>
+                                </div>
+                                <div class="news__card-title">
+                                    <h4>Конференция ProIT</h4>
+                                </div>
+                                <div class="news__card-description">
+                                    <p>Более 500 учащихся посетили конференцию ProIT</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="news__column1"><a href="article.html">
+                            <div class="news__item">
+                                <div class="news__card-picture">
+                                    <img src="./img/news22.webp" alt="news">
+                                    <div class="news__card-picture_bg"></div>
+                                    <button>Подробнее</button><time>01.05.2023</time>
+                                </div>
+                                <div class="news__hashtag">
+                                    <h3>#сми</h3>
+                                </div>
+                                <div class="news__card-title">
+                                    <h4>Витебский государственный университет имени П.М. Машерова и
+                                        компания EPAM Systems отметили 10-летие успешного сотрудничества</h4>
+                                </div>
+                                <div class="news__card-description">
+                                    <p>На базе факультета математики и информационных
+                                        технологий
+                                        состоялась конференция «Будущее за IT».</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="news__column1"><a href="article.html">
+                            <div class="news__item">
+                                <div class="news__card-picture">
+                                    <img src="./img/news33.webp" alt="news">
+                                    <div class="news__card-picture_bg"></div>
+                                    <button>Подробнее</button><time>01.05.2023</time>
+                                </div>
+                                <div class="news__hashtag">
+                                    <h3>#объявления</h3>
+                                </div>
+                                <div class="news__card-title">
+                                    <h4>Старт занятий будет 10 сентября!</h4>
+                                </div>
+                                <div class="news__card-description">
+                                    <p>Уважаемые родители! Старт занятий будет в IT-академии 10
+                                        и 17
+                                        сентября!</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="news__column1"><a href="article.html">
+                            <div class="news__item">
+                                <div class="news__card-picture">
+                                    <img src="./img/news44.webp" alt="news">
+                                    <div class="news__card-picture_bg"></div>
+                                    <button>Подробнее</button><time>01.05.2023</time>
+                                </div>
+                                <div class="news__hashtag">
+                                    <h3>#новости</h3>
+                                </div>
+                                <div class="news__card-title">
+                                    <h4>Прошли пробные занятия на базе ВГУ им. П.М. Машерова</h4>
+                                </div>
+                                <div class="news__card-description">
+                                    <p>29 апреля 2021 года состоялся заключительный этап
+                                        Витебского
+                                        открытого турнира "Математический BrainStorm"</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+
+
+                    <div class="news__column1"><a href="article.html">
+                            <div class="news__item">
+                                <div class="news__card-picture">
+                                    <img src="./img/news11.webp" alt="news">
+                                    <div class="news__card-picture_bg"></div>
+                                    <button>Подробнее</button><time>01.05.2023</time>
+                                </div>
+                                <div class="news__hashtag">
+                                    <h3>#сми</h3>
+                                </div>
+                                <div class="news__card-title">
+                                    <h4>Конференция ProIT</h4>
+                                </div>
+                                <div class="news__card-description">
+                                    <p>Более 500 учащихся посетили конференцию ProIT</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="news__column1"><a href="article.html">
+                            <div class="news__item">
+                                <div class="news__card-picture">
+                                    <img src="./img/news22.webp" alt="news">
+                                    <div class="news__card-picture_bg"></div>
+                                    <button>Подробнее</button><time>01.05.2023</time>
+                                </div>
+                                <div class="news__hashtag">
+                                    <h3>#сми</h3>
+                                </div>
+                                <div class="news__card-title">
+                                    <h4>Витебский государственный университет имени П.М. Машерова и
+                                        компания EPAM Systems отметили 10-летие успешного сотрудничества</h4>
+                                </div>
+                                <div class="news__card-description">
+                                    <p>На базе факультета математики и информационных
+                                        технологий
+                                        состоялась конференция «Будущее за IT».</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="news__column1"><a href="article.html">
+                            <div class="news__item">
+                                <div class="news__card-picture">
+                                    <img src="./img/news33.webp" alt="news">
+                                    <div class="news__card-picture_bg"></div>
+                                    <button>Подробнее</button><time>01.05.2023</time>
+                                </div>
+                                <div class="news__hashtag">
+                                    <h3>#объявления</h3>
+                                </div>
+                                <div class="news__card-title">
+                                    <h4>Старт занятий будет 10 сентября!</h4>
+                                </div>
+                                <div class="news__card-description">
+                                    <p>Уважаемые родители! Старт занятий будет в IT-академии 10
+                                        и 17
+                                        сентября!</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="news__column1"><a href="article.html">
+                            <div class="news__item">
+                                <div class="news__card-picture">
+                                    <img src="./img/news44.webp" alt="news">
+                                    <div class="news__card-picture_bg"></div>
+                                    <button>Подробнее</button><time>01.05.2023</time>
+                                </div>
+                                <div class="news__hashtag">
+                                    <h3>#новости</h3>
+                                </div>
+                                <div class="news__card-title">
+                                    <h4>Прошли пробные занятия на базе ВГУ им. П.М. Машерова</h4>
+                                </div>
+                                <div class="news__card-description">
+                                    <p>29 апреля 2021 года состоялся заключительный этап
+                                        Витебского
+                                        открытого турнира "Математический BrainStorm"</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-------------------------------------------------------------------NEWS----------------------------------------------------------------------------------------------->
+    <!---------------------------------------------------------------FOOTER------------------------------------------------------------------------->
+    <div class="footer">
+        <div class="container">
+            <div class="footer__body">
+                <div class="header_logoandtext">
+                    <a href="index.html">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="./img/logoPhone.svg">
+                            <source media="(min-width: 768px) and (max-width:1279px)" srcset="./img/logoPlanshet.svg">
+                            <img src="./img/logoComp.svg" alt="logo">
+                        </picture>
+                    </a>
+                    <div class="header_logoandtext_name">
+                        <h1><span class="colortext">IT</span>-академия "МИР будущего"</h1>
+                        <p>Учреждение образования “Витебский государственный университет имени П. М. Машерова”</p>
+                    </div>
+                </div>
+                <div class="footer__mapAndAddress">
+                    <div class="footer__mapAndAddress_map"><iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2278.3152166000073!2d30.22274747717152!3d55.17775593613549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46c57143a61e40fd%3A0x5960681ffa5e4d72!2z0JLQuNGC0LXQsdGB0LrQuNC5INCz0L7RgdGD0LTQsNGA0YHRgtCy0LXQvdC90YvQuSDRg9C90LjQstC10YDRgdC40YLQtdGCINC40LzQtdC90Lgg0J8u0JwuINCc0LDRiNC10YDQvtCy0LA!5e0!3m2!1sru!2sby!4v1685653900047!5m2!1sru!2sby"
+                            width="680" height="334" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                    <div class="footer__contacts">
+                        <h1>Наши контакты</h1>
+                        <div class="footer_phone">
+                            <a href="tel:+375333179502">
+                                <h4>
+                                    <picture>
+                                        <source media="(max-width:1279px)" srcset="./img/phonePlanshet.svg">
+                                        <img src="./img/phoneHeaderComp.svg" alt="phone">
+                                    </picture>+375 (33) 317-95-02
+                                </h4>
+                            </a>
+                            <a href="tel:80212375836">
+                                <h4>
+                                    <picture>
+                                        <source media="(max-width:1279px)" srcset="./img/phonePlanshet.svg">
+                                        <img src="./img/phoneHeaderComp.svg" alt="phone">
+                                    </picture>8 (0212) 37-58-36
+                                </h4>
+                            </a>
+                            <a href="mailto:fmiit@vsu.by">
+                                <h4>
+                                    <picture>
+                                        <source media="(max-width:1279px)" srcset="./img/mailPhone.svg">
+                                        <img src="./img/mailComp.svg" alt="mail">
+                                    </picture>fmiit@vsu.by
+                                </h4>
+                            </a>
+
+                            <h4>
+                                <picture>
+                                    <source media="(max-width:1279px)" srcset="./img/geoPhone.svg">
+                                    <img src="./img/geoComp.svg" alt="geolocation">
+                                </picture>Республика Беларусь 210038, г. Витебск, Московский проспект 33
+                            </h4>
+
+                        </div>
+                        <div class="footer__social">
+                            <h1>Социальные сети</h1>
+                            <div class="footer__social_photo">
+                                <a href="https://t.me/fmiit_vsu">
+                                    <picture>
+                                        <source media="(max-width:1279px)" srcset="./img/telegramPh.svg">
+                                        <img src="./img/telegram.svg" alt="telegram">
+                                    </picture>
+                                </a>
+                                <a href="https://instagram.com/fmiit_vsu?igshid=MzRIODBiNWFIZA==">
+                                    <picture>
+                                        <source media="(max-width:1279px)" srcset="./img/instPh.svg">
+                                        <img src="./img/instagram.svg" alt="instagram">
+                                    </picture>
+                                </a>
+                                <a href="https://vk.com/mf_vsu">
+                                    <picture>
+                                        <source media="(max-width:1279px)" srcset="./img/vkPh.svg">
+                                        <img src="./img/vk.svg" alt="vkontakte">
+                                    </picture>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__rights">
+                    <p>© 2023 ВГУ имени П.М.Машерова. Все права защищены.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
