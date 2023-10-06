@@ -223,14 +223,14 @@
   display: block;
   width: 26px;
   height: 16px;
-  background: url("C:\\Users\\Admin\\Desktop\\it-academy\\img\\hamburger.svg");
+  background: url(/img/hamburger.svg);
 }
 @media only screen and (max-width: 575.5px) {
   .header__mobile-menu a {
     text-decoration: none;
     width: 20px;
     height: 12.5px;
-    background: url("C:\\Users\\Admin\\Desktop\\it-academy\\img\\hambMob.svg");
+    background: url(/img/hambMob.svg);
   }
 }
 .header__mobile {
@@ -288,21 +288,21 @@
   width: 100%;
   min-width: 0;
   object-fit: cover;
-  background-image: url("C:\\Users\\Admin\\Desktop\\it-academy\\img\\girlWithVRPlanshet.webp");
+  background-image: url(/img/girlwithvrplanshet.webp);
 }
 @media only screen and (max-width: 575.5px) {
   .header_main {
-    background-image: url("C:\\Users\\Admin\\Desktop\\it-academy\\img\\girlWithVRPhone.webp");
+    background-image: url(/img/girlwithvrphone.webp);
   }
 }
 @media only screen and (min-width: 1280px) {
   .header_main {
-    background-image: url("C:\\Users\\Admin\\Desktop\\it-academy\\img\\girlWithVRLaptop.webp");
+    background-image: url(/img/girlwithvrlaptop.webp);
   }
 }
 @media only screen and (min-width: 1920px) {
   .header_main {
-    background-image: url("C:\\Users\\Admin\\Desktop\\it-academy\\img\\GirlWithVR.webp");
+    background-image: url(/img/girlwithvr.webp);
   }
 }
 .header_pagination img {
@@ -698,7 +698,7 @@
 .menu_item_sub-menu::after {
   width: 10px;
   height: 5px;
-  background: url("C:\\Users\\Admin\\Desktop\\it-academy\\img\\submenu.svg");
+  background: url(/img/submenu.svg);
   content: "";
   right: 0;
   position: absolute;
@@ -782,7 +782,7 @@
   width: 16px;
   height: 16px;
   text-decoration: none;
-  background: url("C:\\Users\\Admin\\Desktop\\it-academy\\img\\close.svg");
+  background: url(/img/close.svg);
 }
 .mobile-menu__nav {
   padding: 0;
@@ -887,7 +887,7 @@
 .mobile-menu__item1 [data-toggle=mobile-menu__item1_sub-menu]::after {
   width: 10px;
   height: 5px;
-  background: url("C:\\Users\\Admin\\Desktop\\it-academy\\img\\submenu.svg");
+  background: url(/img/submenu.svg);
   content: "";
   right: 0;
   position: absolute;
@@ -897,7 +897,7 @@
 .mobile-menu__item1 [data-toggle=mobile-menu__item1_sub-menu]:active .mobile-menu__item1_sub-menu::after {
   width: 10px;
   height: 5px;
-  background: url("C:\\Users\\Admin\\Desktop\\it-academy\\img\\arrowHover.svg");
+  background: url(/img/arrowHover.svg);
 }
 .mobile-menu__item1 .sub-menu {
   background: #FFF;
@@ -1580,7 +1580,7 @@
 .news__more a::after {
   width: 12px;
   height: 12px;
-  background: url("C:\\Users\\Admin\\Desktop\\it-academy\\img\\arrow.svg");
+  background: url(/img/arrow.svg);
   display: block;
   content: "";
   position: absolute;
@@ -3197,7 +3197,7 @@
 .courses__columnInput__check:checked + label::before {
   background: #356AD2;
   border-color: #356AD2;
-  background-image: url("C:\\Users\\Admin\\Desktop\\it-academy\\img\\check.svg");
+  background-image: url(/img/check.svg);
   background-size: 10px 10px;
   background-repeat: no-repeat;
   background-position: center;
@@ -3809,7 +3809,7 @@
 .math__columnCourses li {
   padding-left: 5px;
   margin-bottom: 12px;
-  list-style-image: url("C:\\Users\\Admin\\Desktop\\it-academy\\img\\list.svg");
+  list-style-image: url(/img/list.svg);
 }
 .math__columnCourses h3 {
   margin: 0;
