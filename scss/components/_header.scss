@@ -246,14 +246,14 @@
             display: block;
             width: 26px;
             height: 16px;
-            background: url("C:\\Users\\Admin\\Desktop\\it-academy\\img\\hamburger.svg");
+            background: url(/img/hamburger.svg);
 
             @include media-max("sm") {
 
                 text-decoration: none;
                 width: 20px;
                 height: 12.5px;
-                background: url("C:\\Users\\Admin\\Desktop\\it-academy\\img\\hambMob.svg");
+                background: url(/img/hambMob.svg);
             }
 
         }
@@ -331,19 +331,19 @@
         object-fit: cover;
 
 
-        background-image: url("C:\\Users\\Admin\\Desktop\\it-academy\\img\\girlWithVRPlanshet.webp");
+        background-image: url(/img/girlwithvrplanshet.webp);
 
         @include media-max("sm") {
-            background-image: url("C:\\Users\\Admin\\Desktop\\it-academy\\img\\girlWithVRPhone.webp");
+            background-image: url(/img/girlwithvrphone.webp);
         }
 
         @include media-min("xl") {
-            background-image: url("C:\\Users\\Admin\\Desktop\\it-academy\\img\\girlWithVRLaptop.webp");
+            background-image: url(/img/girlwithvrlaptop.webp);
         }
 
         @include media-min("hd") {
 
-            background-image: url("C:\\Users\\Admin\\Desktop\\it-academy\\img\\GirlWithVR.webp");
+            background-image: url(/img/girlwithvr.webp);
         }
     }
 
@@ -762,7 +762,7 @@
 
                 width: 10px;
                 height: 5px;
-                background: url("C:\\Users\\Admin\\Desktop\\it-academy\\img\\submenu.svg");
+                background: url(/img/submenu.svg);
                 content: "";
                 right: 0;
                 position: absolute;
@@ -870,7 +870,7 @@
             width: 16px;
             height: 16px;
             text-decoration: none;
-            background: url("C:\\Users\\Admin\\Desktop\\it-academy\\img\\close.svg");
+            background: url(/img/close.svg);
         }
     }
 
@@ -1005,7 +1005,7 @@
             &::after {
                 width: 10px;
                 height: 5px;
-                background: url("C:\\Users\\Admin\\Desktop\\it-academy\\img\\submenu.svg");
+                background: url(/img/submenu.svg);
                 content: "";
                 right: 0;
                 position: absolute;
@@ -1016,7 +1016,7 @@
             &:active .mobile-menu__item1_sub-menu::after {
                 width: 10px;
                 height: 5px;
-                background: url("C:\\Users\\Admin\\Desktop\\it-academy\\img\\arrowHover.svg");
+                background: url(/img/arrowHover.svg);
             }
 
 
