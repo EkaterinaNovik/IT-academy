@@ -3,97 +3,67 @@
     display: flex;
     background: $white;
     padding: 60px 0;
-
     @include media-min("md") {
         padding: 80px 0;
     }
-
     @include media-min("xl") {
         padding: 100px 0;
     }
-
     &__head {
         display: flex;
         flex-direction: row;
         padding-bottom: 40px;
-
         @include media-min("md") {
             padding-bottom: 60px;
         }
-
         @include media-min("xl") {
             padding-bottom: 80px;
         }
     }
-
     &__column {
         display: flex;
         flex-direction: column;
-
         h4 {
             margin: 0;
             padding-bottom: 12px;
-            font-family: 'Mulish';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 20px;
-            line-height: 25px;
+            font:normal 500 20px/25px 'Mulish';
             color: $blue;
-
             @include media-min("md") {
                 font-size: 24px;
                 line-height: 30px;
             }
-
             @include media-min("xl") {
                 font-size: 32px;
                 line-height: 40px;
-
             }
         }
-
         p {
             margin: 0;
-            font-family: 'Open Sans';
-            font-style: normal;
-            font-weight: 300;
-            font-size: 14px;
-            line-height: 150%;
+            font:normal 300 14px/150% 'Open Sans';
             color: $black;
-
             @include media-min("xl") {
                 font-size: 16px;
             }
         }
-
         &_exit {
             display: flex;
             flex-direction: row;
             align-items: flex-start;
             margin-left: auto;
-
             img {
                 width: 16px;
                 height: 16px;
-
                 padding-right: 12px;
             }
-
             a {
                 text-decoration: none;
             }
-
             h5 {
                 display: flex;
                 align-items: center;
                 margin: 0;
-                font-family: 'Mulish';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 14px;
-                line-height: 18px;
+                font:normal 400 14px/18px 'Mulish';
                 color: $black;
-
                 @include media-min("xl") {
                     font-size: 16px;
                     line-height: 20px;
@@ -101,160 +71,110 @@
             }
         }
     }
-
     &__table {
-
-
         caption {
             text-align: start;
             caption-side: top;
             padding-bottom: 20px;
             margin: 0;
-            font-family: 'Mulish';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 20px;
+            font:normal 400 16px/20px 'Mulish';
             text-transform: uppercase;
             color: $black;
-
             @include media-min("md") {
                 padding-bottom: 30px;
                 font-size: 18px;
                 line-height: 23px;
             }
         }
-
         table {
             width: 100%;
             border-collapse: collapse;
             margin-bottom: 20px;
             table-layout: fixed;
         }
-
         th {
             width: 100%;
             text-align: start;
             margin: 0;
             padding: 20px 0 20px 24px;
-            font-family: 'Mulish';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 18px;
+            font:normal 400 14px/18px 'Mulish';
             color: $black;
             background: rgba(53, 106, 210, 0.04);
             border: 1px solid rgba(53, 106, 210, 0.2);
-
             @include media-min("md") {
                 font-size: 16px;
                 line-height: 20px;
             }
         }
-
         tr {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-
         }
-
         td {
             display: inline-block;
             flex: 1 1 auto;
             border: 1px solid rgba(53, 106, 210, 0.2);
             padding: 30px 24px;
             width: 33.3%;
-
             @include media-max("md") {
                 position: relative;
                 width: 50%;
             }
-
             @include media-min("xl") {
                 width: 20%;
             }
         }
-
         td:nth-child(3) {
             background: rgba(53, 106, 210, 0.16);
         }
-
-
         &__body {
             display: flex;
             flex-direction: column;
-
             &_audience {
                 display: flex;
                 position: relative;
                 width: 65px;
                 height: 27px;
-
                 background: rgba(53, 106, 210, 0.1);
                 border-radius: 28px;
-
                 p {
                     display: flex;
                     position: absolute;
                     margin: 0;
-                    font-family: 'Mulish';
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 12px;
-                    line-height: 15px;
+                    font:normal 400 12px/15px 'Mulish';
                     color: $black;
                     left: 8px;
                     top: 6px;
                 }
-
             }
-
             &_audienceStu {
                 display: flex;
                 position: relative;
                 width: 65px;
                 height: 27px;
-
-
                 background: $blue;
                 border-radius: 28px;
-
                 p {
                     display: flex;
                     position: absolute;
                     margin: 0;
-                    font-family: 'Mulish';
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 12px;
-                    line-height: 15px;
+                    font:normal 400 12px/15px 'Mulish';
                     color: $white;
                     left: 8px;
                     top: 6px;
                 }
-
             }
-
             strong {
                 margin: 0;
                 padding-top: 20px;
-                font-family: 'Mulish';
-                font-style: normal;
-                font-weight: 500;
-                font-size: 16px;
-                line-height: 20px;
+                font:normal 500 16px/20px 'Mulish';
                 color: $black;
             }
-
             h6 {
                 margin: 0;
                 padding-top: 12px;
-                font-family: 'Open Sans';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 14px;
-                line-height: 19px;
+                font:normal 400 14px/19px 'Open Sans';
                 color: $black;
             }
         }

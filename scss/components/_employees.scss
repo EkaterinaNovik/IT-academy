@@ -3,81 +3,54 @@
     width: 100%;
     background: $bggrey;
     padding: 60px 0;
-
     @include media-min("md") {
         padding: 80px 0 20px;
     }
-
     @include media-min("xl") {
         padding: 100px 0 20px;
     }
-
     &__body {
-
         padding: 40px 0;
-
         @include media-min("md") {
             width: 50%;
             padding: 85px 0;
         }
-
         @include media-min("xl") {
-
             padding: 118px 0;
         }
-
         @include media-min("hd") {
             padding: 108.5px 0;
         }
-
     }
-
     &__description {
         display: flex;
         flex-direction: column;
-
         h1 {
             margin: 0;
-            font-family: 'Mulish';
-            font-style: normal;
-            font-weight: 300;
-            font-size: 24px;
-            line-height: 110%;
+            font:normal 300 24px/110% 'Mulish';
             color: $black;
-
             @include media-min("md") {
                 font-size: 32px;
             }
-
             @include media-min("xl") {
                 font-size: 48px;
             }
-
             @include media-min("hd") {
                 font-size: 64px;
             }
         }
-
         p {
             margin: 0;
             padding-top: 20px;
-            font-family: 'Open Sans';
-            font-style: normal;
-            font-weight: 300;
-            font-size: 14px;
-            line-height: 150%;
+            font:normal 300 14px/150% 'Open Sans';
             color: $black;
-
             @include media-min("xl") {
                 padding-top: 30px;
                 font-size: 18px;
             }
         }
-
     }
-
     &__button {
-
         @include media-max("md") {
             display: flex;
             position: relative;
@@ -86,25 +59,22 @@
             margin-left: 18px;
             padding-top: 10px;
         }
-
         button {
             a {
                 text-align: center;
                 vertical-align: top;
                 padding: 12px 30px;
-
                 color: $white;
                 text-decoration: none;
+                font: 400 14px/18px 'Mulish';
                 font-family: 'Mulish';
                 font-size: 14px;
                 font-weight: 400;
                 line-height: 18px;
-
                 @include media-min("xl") {
                     padding: 16px 35px;
                 }
             }
-
             border: none;
             display:flex;
             background: $blue;
@@ -112,18 +82,13 @@
             margin-top:40px;
             margin-left:18px;
             justify-content: center;
-
             @include media-max("md") {
                 margin-left: 0;
                 width: 100%;
             }
-
-
             @include media-min("xl") {
                 margin-top: 50px;
             }
-
-
             &:before {
                 content: '';
                 display: block;
@@ -135,12 +100,10 @@
                 position: absolute;
                 top: 0;
                 left: -18px;
-
                 @include media-min("xl") {
                     border-bottom: 52px solid $blue;
                 }
             }
-
             &:after {
                 content: '';
                 display: block;
@@ -157,131 +120,91 @@
                     border-top: 52px solid $blue;
                 }
             }
-
             &:hover {
                 background: #2152B2;
             }
-
             &:hover:before {
-
                 border-bottom: 44px solid #2152B2;
-
                 @include media-min("xl") {
                     border-bottom: 52px solid #2152B2;
                 }
-
             }
-
             &:hover:after {
                 border-top: 44px solid #2152B2;
-
                 @include media-min("xl") {
                     border-top: 52px solid #2152B2;
                 }
             }
         }
     }
-
     &__card {
         display: flex;
         flex-direction: column;
         padding-bottom: 20px;
-
         @include media-min("md") {
             padding-bottom: 30px;
         }
-
         @include media-min("xl") {
             padding-bottom: 50px;
         }
-
         h1 {
             margin: 0 0 30px;
-            font-family: 'Mulish';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 24px;
-            line-height: 30px;
+            font:normal 500 24px/30px 'Mulish';
             color: $blue;
-
             @include media-max("md") {
                 margin: 0 0 30px;
                 font-size: 20px;
                 line-height: 25px;
             }
-
             @include media-min("xl") {
                 font-size: 32px;
                 line-height: 40px;
             }
         }
     }
-
-
     &__row {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         margin: 0 -10px;
-
         @include media-max("sm") {
             flex-direction: column;
             margin-right: 0px;
             margin-left: 0px;
         }
     }
-
     &__column {
         display: flex;
-
         a {
             display: flex;
             text-decoration: none;
         }
-
         flex: 1 1 100%;
         padding: 0 0 20px 0;
-
         @include media-min("md") {
             flex: 0 1 47.1%;
             padding: 0 10px 30px 10px;
         }
-
         @include media-min("xl") {
-
             flex: 0 1 23.3%;
             padding: 0 10px 30px 10px;
         }
-
-
     }
-
     &__item {
         background: $white;
         display: flex;
         flex-direction: column;
-
-
-
         &:hover {
             border: 1px solid $blue;
         }
-
         &:hover .employees__card-picture {
             button {
-
                 text-align: center;
                 vertical-align: top;
                 padding: 12px 30px;
-
                 color: $white;
                 text-decoration: none;
-                font-family: 'Mulish';
-                font-size: 14px;
-                font-weight: 400;
-                line-height: 18px;
-
-
+                font: 400 14px/18px 'Mulish';
                 border: none;
                 display: flex;
                 background: $blue;
@@ -291,7 +214,6 @@
                 left: 50%;
                 top: 50%;
                 transform: translate(-50%, 0);
-
                 &:before {
                     content: '';
                     display: block;
@@ -304,7 +226,6 @@
                     top: 0;
                     left: -18px;
                 }
-
                 &:after {
                     content: '';
                     display: block;
@@ -317,37 +238,27 @@
                     top: 0;
                     right: -18px;
                 }
-
                 @include media-max("xl") {
                     display: none;
                 }
-
-
             }
         }
-
-
         &:hover .employees__card-picture_bg {
             background: rgba(53, 106, 210, 0.4);
         }
     }
-
     &__card-picture {
         display: flex;
         position: relative;
         flex: 0 0 auto;
-
         img {
             display: flex;
             max-width: 100%;
             object-fit: cover;
         }
-
         button {
             display: none;
         }
-
-
         &_bg {
             position: absolute;
             width: 100%;
@@ -355,48 +266,32 @@
             transition: .3s;
         }
     }
-
     &__card-title {
         display: flex;
         flex-direction: column;
         flex: 1 1 auto;
-
         h4 {
             margin: 20px 20px 0;
-            font-family: 'Mulish';
-            font-style: normal;
-            font-weight: 600;
-            font-size: 16px;
-            line-height: 140%;
+            font:normal 600 16px/140% 'Mulish';
             color: $blue;
-
             @include media-min("md") {
                 font-size: 18px;
                 margin: 32.5px 30px 0px;
             }
-
             @include media-min("xl") {
                 margin: 30.5px 30px 0px;
             }
         }
-
         p {
             margin: 8px 20px 30px;
-            font-family: 'Open Sans';
-            font-style: normal;
-            font-weight: 300;
-            font-size: 14px;
-            line-height: 150%;
+            font:normal 300 14px/150% 'Open Sans';
             color: $black;
-
             @include media-min("md") {
                 margin: 8px 30px 42.5px;
             }
-
             @include media-min("xl") {
                 margin: 8px 30px 40.5px;
             }
         }
     }
-
 }

@@ -4,80 +4,52 @@
     background: $white;
     padding: 60px 0;
     flex-direction: column;
-
     @include media-min("md") {
         padding: 80px 0;
     }
-
     @include media-min("xl") {
         padding: 100px 0;
     }
-
     &__row {
         display: flex;
         flex-direction: column;
-
-
-
         @include media-min("md") {
-
             flex-direction: row;
         }
-
-
     }
-
     &__columnText {
         margin-bottom: 30px;
-
         @include media-min("md") {
             margin-right: 30px;
             margin-bottom: 0;
-
         }
-
         @include media-min("xl") {
             margin-right: 120px;
         }
-
         h1 {
             margin: 0;
-            font-family: 'Mulish';
-            font-style: normal;
-            font-weight: 300;
-            font-size: 24px;
-            line-height: 110%;
+            font:normal 300 24px/110% 'Mulish';
             color: $black;
-
             @include media-min("md") {
                 font-size: 32px;
             }
-
             @include media-min("xl") {
                 font-size: 48px;
             }
-
             @include media-min("hd") {
                 font-size: 64px;
             }
         }
-
         p {
             margin: 0;
             padding-top: 20px;
-            font-family: 'Open Sans';
-            font-style: normal;
-            font-weight: 300;
-            font-size: 14px;
-            line-height: 150%;
+            font:normal 300 14px/150% 'Open Sans';
             color: $black;
-
             @include media-min("xl") {
                 font-size: 18px;
                 padding-top: 30px;
             }
         }
-
         &__button {
             display: flex;
             position: relative;
@@ -85,39 +57,26 @@
             padding-right: 18px;
             margin-left: 18px;
             padding-top: 40px;
-
             @include media-min("xl") {
                 padding-top: 50px;
             }
-
             button {
                 a {
                     text-align: center;
                     vertical-align: top;
                     padding: 12px 30px;
-
                     color: $white;
                     text-decoration: none;
-                    font-family: 'Mulish';
-                    font-size: 14px;
-                    font-weight: 400;
-                    line-height: 18px;
+                    font: 400 14px/18px 'Mulish';
                 }
-
-
                 border: none;
                 display: flex;
                 background: $blue;
                 position: relative;
                 justify-content: center;
-
                 @include media-max("md") {
                     width: 100%;
                 }
-
-
-
-
                 &:before {
                     content: '';
                     display: block;
@@ -130,7 +89,6 @@
                     top: 0;
                     left: -18px;
                 }
-
                 &:after {
                     content: '';
                     display: block;
@@ -143,78 +101,54 @@
                     top: 0;
                     right: -18px;
                 }
-
                 &:hover {
                     background: #2152B2;
                 }
-
                 &:hover:before {
-
                     border-bottom: 44px solid #2152B2;
-
                 }
-
                 &:hover:after {
                     border-top: 44px solid #2152B2;
-
-
                 }
-
             }
         }
-
     }
-
     &__columnContacts {
         display: flex;
         flex-direction: column;
         width: -webkit-fill-available;
-
         h3 {
             margin: 0;
             padding-bottom: 16px;
-            font-family: 'Mulish';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 20px;
+            font:normal 400 16px/20px 'Mulish';
             color: $blue;
-
             @include media-min("xl") {
                 font-size: 20px;
                 line-height: 25px;
                 padding-bottom: 24px;
             }
         }
-
         &_photo {
             display: flex;
             flex-direction: row;
             padding-top: 16px;
             gap: 12px;
-
             @include media-min("xl") {
                 padding-top: 24px;
             }
-
             a {
                 text-decoration: none;
-
                 picture {
                     display: flex;
                     width: 25px;
-
                     @include media-min("xl") {
                         width: 30px;
-
                     }
                 }
-
                 img {
                     width: 25px;
                     height: 25px;
                     padding-right: 12px;
-
                     @include media-min("xl") {
                         width: 30px;
                         height: 30px;
@@ -223,34 +157,22 @@
             }
         }
     }
-
     &_map {
         display: flex;
         width: 100%;
         padding-top: 60px;
-
-
         @include media-max("md") {
             min-width: 264px;
             padding-top: 40px;
-
         }
-
         @include media-min("xl") {
             padding-top: 80px;
         }
-
-
         iframe {
             @include media-max("md") {
                 min-width: 264px;
-
             }
-
             flex: 1 1 auto;
-
-
         }
-
     }
 }

@@ -3,201 +3,138 @@
     width: 100%;
     background-color: $bggrey;
     padding: 60px 0;
-
     @include media-min("md") {
         padding: 80px 0;
-
     }
-
     @include media-min("xl") {
         padding: 100px 0;
-
     }
-
-
     &__head {
         display: flex;
         position: relative;
         margin-bottom: 30px;
-
         @include media-min("md") {
             margin-bottom: 40px;
         }
     }
-
     &__title {
-
-
         h2 {
             margin: 0;
-            font-family: 'Mulish';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 20px;
-            line-height: 25px;
+            font:normal 500 20px/25px 'Mulish';
             color: $blue;
-
             @include media-min("md") {
                 font-size: 24px;
                 line-height: 30px;
             }
-
             @include media-min("xl") {
                 font-size: 32px;
                 line-height: 40px;
             }
         }
     }
-
     &__card-picture {
-
         display: flex;
         flex: 0 0 300px;
         position: relative;
-
-
-
-
         @include media-max("sm") {
             flex: 0 0 auto;
         }
-
         @include media-min("xl") {
             flex: 0 0 auto;
         }
-
         img {
             display: flex;
             max-width: 100%;
-
             object-fit: cover;
-
             &:hover {
                 opacity: 0.8;
             }
-
         }
-
         button {
             display: none;
         }
-
         &_bg {
             position: absolute;
             width: 100%;
             height: 100%;
             transition: .3s;
         }
-
-
     }
-
     &__body {
         margin: 0 auto;
     }
-
     &__row {
         display: flex;
         flex-direction: column;
-
-
         @include media-max("sm") {
             flex-direction: column;
-
             margin-right: 0px;
             margin-left: 0px;
-
-
         }
-
         @include media-min("xl") {
             flex-direction: row;
             margin: 0 -10px;
         }
     }
-
     &__column {
-
         flex: 0 1 100%;
         display: flex;
         margin-bottom: 20px;
-
         a {
             display: flex;
             text-decoration: none;
         }
-
         &:last-child {
             margin-bottom: 0;
         }
-
         @include media-max("sm") {
             flex: 0 1 100%;
             margin-bottom: 30px;
-
-
             &:last-child {
                 margin-bottom: 0;
             }
         }
-
         @include media-min("xl") {
             margin: 0;
             padding: 0 10px;
             flex: 0 1 33.333%;
         }
-
     }
-
     &__item {
         background-color: $white;
         display: flex;
         flex-direction: row;
         position: relative;
         border-bottom: 1px solid $blue;
-
-
-
         @include media-max("sm") {
             flex-direction: column;
         }
-
         @include media-min("xl") {
             flex-direction: column;
         }
-
-
-
         &:hover h4 {
             color: $white;
         }
-
         &:hover p {
             color: $white;
 
         }
-
         &:hover {
             background-color: $blue;
             transition: 1s;
             height: 100%;
         }
-
         &:hover .sections__card-picture {
             button {
-
                 text-align: center;
                 vertical-align: top;
                 padding: 12px 30px;
-
                 color: $white;
                 text-decoration: none;
                 font-family: 'Mulish';
                 font-size: 14px;
                 font-weight: 400;
                 line-height: 18px;
-
-
                 border: none;
                 display: flex;
                 background: $blue;
@@ -207,10 +144,6 @@
                 left: 50%;
                 top: 50%;
                 transform: translate(-50%, 0);
-
-
-
-
                 &:before {
                     content: '';
                     display: block;
@@ -223,7 +156,6 @@
                     top: 0;
                     left: -18px;
                 }
-
                 &:after {
                     content: '';
                     display: block;
@@ -236,97 +168,59 @@
                     top: 0;
                     right: -18px;
                 }
-
                 @include media-max("xl") {
                     display: none;
                 }
-
-
             }
         }
-
-
-
         &:hover .sections__card-picture_bg {
             background: rgba(53, 106, 210, 0.2);
         }
     }
-
     &__bodyForCol {
         display: flex;
         flex-direction: column;
         justify-content: center;
         flex: 1 1 auto;
         padding: 0 40px;
-
         @include media-max("sm") {
             padding: 0;
         }
-
         @include media-min("xl") {
             padding: 0;
         }
-
-
-
     }
-
     &__card-title {
         display: flex;
-
-
         h4 {
             margin: 0;
-
-            font-family: 'Mulish';
-            font-style: normal;
-            font-weight: 600;
-            font-size: 16px;
-            line-height: 20px;
+            font:normal 600 16px/20px 'Mulish';
             color: $black;
-
             @include media-min("xl") {
                 padding: 20px 30px 0 30px;
             }
-
             @include media-max("sm") {
                 padding: 20px 20px 0 20px;
             }
-
         }
-
     }
-
     &__card-description {
         display: flex;
         flex: 0 1 auto;
         padding: 12px 0 0;
-
-
         @include media-min("xl") {
             padding: 12px 30px 30px 30px;
         }
-
-
         @include media-max("sm") {
             padding: 12px 20px 30px 20px;
         }
-
         p {
-
             margin: 0;
-            font-family: 'Open Sans';
-            font-style: normal;
-            font-weight: 300;
-            font-size: 14px;
-            line-height: 150%;
+            font:normal 300 14px/150% 'Open Sans';
             color: $black;
-
         }
     }
-
 }
-
 .video {
     width: 100%;
     margin-top: 100px;

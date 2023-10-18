@@ -3,114 +3,84 @@
     width: 100%;
     background: $bggrey;
     padding: 60px 0 30px;
-
     @include media-min("md") {
         padding: 80px 0 50px;
     }
-
     @include media-min("xl") {
         padding: 100px 0 70px;
     }
-
     &__bodyPage {
         padding: 40px 0;
-
         @include media-min("md") {
             width: 50%;
             padding: 105px 0;
         }
-
         @include media-min("xl") {
             padding: 137px 0;
         }
-
         @include media-min("hd") {
             padding: 143px 0;
         }
     }
-
     &__body {
         margin: 0 auto;
     }
-
     &__row {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         margin: 0 -10px;
-
         @include media-max("sm") {
             flex-direction: column;
             margin-right: 0px;
             margin-left: 0px;
         }
-
     }
-
     &__column {
         display: flex;
         flex: 1 1 33.333%;
         padding: 0 10px 30px 10px;
-
         flex: 1 1 100%;
         padding: 0 0 30px 0;
-
         @include media-min("md") {
             flex: 0 1 47.1%;
             padding: 0 10px 30px 10px;
         }
-
         @include media-min("xl") {
-
             flex: 0 1 31.6%;
             padding: 0 10px 30px 10px;
         }
     }
-
     &__card-picture {
-
         display: flex;
         position: relative;
         flex-direction: column;
         flex: 0 1 auto;
-
-
         img {
             display: flex;
             max-width: 100%;
             object-fit: cover;
         }
-
         button {
             display: none;
         }
-
         &_bg {
             position: absolute;
             width: 100%;
             height: 100%;
             transition: .3s;
         }
-
         a {
             text-decoration: none;
         }
-
         &:hover {
             button {
-
                 text-align: center;
                 vertical-align: top;
                 padding: 12px 30px;
-
                 color: $white;
                 text-decoration: none;
-                font-family: 'Mulish';
-                font-size: 14px;
-                font-weight: 400;
-                line-height: 18px;
-
-
+                font: 400 14px/18px 'Mulish';
                 border: none;
                 display: flex;
                 background: $blue;
@@ -121,9 +91,6 @@
                 top: 50%;
                 transform: translate(-50%, 0);
                 z-index: 1;
-
-
-
                 &:before {
                     content: '';
                     display: block;
@@ -136,7 +103,6 @@
                     top: 0;
                     left: -18px;
                 }
-
                 &:after {
                     content: '';
                     display: block;
@@ -149,27 +115,19 @@
                     top: 0;
                     right: -18px;
                 }
-
                 @include media-max("xl") {
                     display: none;
                 }
-
-
             }
         }
-
         &:hover .gallery__card-picture_bg {
             background: rgba(53, 106, 210, 0.4);
             z-index: 1;
         }
-
         &:hover img {
             z-index: 1;
         }
-
-
     }
-
     &__card-title {
         display: flex;
         position: absolute;
@@ -177,27 +135,19 @@
         bottom: 0;
         flex: 1 1 auto;
         background: $white;
-
         h4 {
             margin: 14px 30px;
-            font-family: 'Mulish';
-            font-style: normal;
-            font-weight: 600;
-            font-size: 14px;
-            line-height: 140%;
+            font:normal 600 14px/140% 'Mulish';
             color: $black;
         }
     }
-
     &__album {
         @include media-max("md") {
             padding-top: 0px;
         }
-
         @include media-max("xl") {
             padding-top: 10px;
         }
-
         padding-top:20px;
     }
 }
